@@ -10,6 +10,9 @@ int main(int argc, const char ** argv) {
 	puts("");
 
 	weak_actions();
+	puts("");
+
+	deleter_actions();
 
 	return 0;
 }
