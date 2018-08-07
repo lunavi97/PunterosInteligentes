@@ -64,5 +64,4 @@ void shared_actions() {
 	disp(b);
 
 	message("end of scope");
-	puts("");
 }

@@ -26,6 +26,7 @@
     <ClCompile Include="shared_ptr.cpp" />
     <ClCompile Include="unique_ptr.cpp" />
     <ClCompile Include="strc.cpp" />
+    <ClCompile Include="weak_ptr.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

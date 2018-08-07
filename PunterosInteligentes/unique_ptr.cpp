@@ -62,5 +62,4 @@ void unique_actions() {
 	disp(c);
 
 	message("end of scope");
-	puts("");
 }

@@ -9,6 +9,7 @@
 void message(const char * s);
 void unique_actions();
 void shared_actions();
+void weak_actions();
 
 static const char * __strc_class = "strc";
 static const char * __strc_version = "1.0";
