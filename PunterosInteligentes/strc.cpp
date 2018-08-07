@@ -1,9 +1,13 @@
 // strc.cpp - simple string wrapper class
 
 #include "strc.h"
-#include <cstdio>
 #include <cstring>
 #include <memory>
+
+void message(const char * s) {
+	printf("\n%s\n", s);
+	fflush(stdout);
+}
 
 void strc::msg(const char * s) {
 	if (data) printf("%s: %s (%s)\n", __strc_class, s, data);

@@ -1,13 +1,7 @@
 // unique_ptr.cpp
 
-#include <cstdio>
 #include <memory>
 #include "strc.h"
-
-void message(const char * s) {
-	printf("\n%s\n", s);
-	fflush(stdout);
-}
 
 // display object value from unique_ptr
 void disp(std::unique_ptr<strc> & o) {
@@ -28,7 +22,9 @@ void f(std::unique_ptr<strc> & p) {
 	disp(p);
 }
 
-int main(int argc, const char ** argv) {
+void unique_actions() {
+	puts("UNIQUE POINTERS");
+	puts("---------------");
 
 	message("create unique pointer one");
 	std::unique_ptr<strc> a(new strc("one"));
@@ -66,5 +62,5 @@ int main(int argc, const char ** argv) {
 	disp(c);
 
 	message("end of scope");
-	return 0;
+	puts("");
 }

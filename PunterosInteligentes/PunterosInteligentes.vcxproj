@@ -22,6 +22,8 @@
     <ClInclude Include="strc.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="shared_ptr.cpp" />
     <ClCompile Include="unique_ptr.cpp" />
     <ClCompile Include="strc.cpp" />
   </ItemGroup>
