@@ -16,6 +16,7 @@ void shared_actions() {
 
 	message("create pointer with new");
 	auto a = std::make_shared<strc>("new");
+	disp(a);
 
 	message("reset a to one");
 	a.reset(new strc("one"));
