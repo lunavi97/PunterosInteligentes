@@ -21,6 +21,18 @@ void shared_actions() {
 	std::shared_ptr<strc> x(new strc("foo"));
 	disp(x);
 
+	auto x1 = a;
+	auto x2 = a;
+	auto x3 = a;
+	auto x4 = a;
+	disp(a);
+
+	x1.reset();
+	x2.reset();
+	x3.reset();
+	x4.reset();
+	disp(a);
+
 	message("reset a to one");
 	a.reset(new strc("one"));
 	disp(a);
