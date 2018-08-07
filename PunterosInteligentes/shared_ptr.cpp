@@ -18,6 +18,9 @@ void shared_actions() {
 	auto a = std::make_shared<strc>("new");
 	disp(a);
 
+	std::shared_ptr<strc> x(new strc("foo"));
+	disp(x);
+
 	message("reset a to one");
 	a.reset(new strc("one"));
 	disp(a);
