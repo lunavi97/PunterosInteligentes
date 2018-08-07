@@ -23,11 +23,18 @@ namespace notstd {
 	}
 }
 
+void f(std::unique_ptr<strc> & p) {
+	message("f()");
+	disp(p);
+}
+
 int main(int argc, const char ** argv) {
 
 	message("create unique pointer one");
 	std::unique_ptr<strc> a(new strc("one"));
 	disp(a);
+
+	f(a);
 
 	message("make_unique two");
 	// auto b = notstd::make_unique<strc>("two");
