@@ -30,7 +30,8 @@ int main(int argc, const char ** argv) {
 	disp(a);
 
 	message("make_unique two");
-	auto b = notstd::make_unique<strc>("two");
+	// auto b = notstd::make_unique<strc>("two");
+	auto b = std::make_unique<strc>("two");
 	disp(a);
 	disp(b);
 
